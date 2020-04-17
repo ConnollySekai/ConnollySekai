@@ -1,0 +1,16 @@
+.logo {
+    max-width: 205px;
+    @apply mx-auto;
+}
+
+@screen sm {
+    .logo {
+        @apply mr-auto ml-0;
+    }
+}
+
+@screen md {
+    .logo {
+        max-width: 222px;
+    }
+}

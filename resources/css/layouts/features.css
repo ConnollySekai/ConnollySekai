@@ -1,0 +1,13 @@
+.feature {
+    max-width: 275px;
+}
+
+.feature__image {
+    max-width: 65px;
+}
+
+@screen md {
+    .feature__image {
+        max-width: 85px;
+    }
+}

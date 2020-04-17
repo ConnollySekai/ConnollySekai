@@ -1,0 +1,20 @@
+.built-with__image {
+    max-width: 250px;
+}
+
+.built-with__logos {
+    div {
+        height: 51px;
+    }
+}
+
+@screen md {
+    .built-with__image {
+        max-width: 280px;
+    }
+
+    .built-with__logos {
+        right: 25px;
+        bottom: 47px;
+    }
+}

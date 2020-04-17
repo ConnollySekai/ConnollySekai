@@ -1,0 +1,9 @@
+.hero__image {
+    max-width: 380px;
+}
+
+@screen md {
+    .hero__image {
+        max-width: 480px;
+    }
+}

@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'Archivo';
+    src: url('./../fonts/Archivo-Medium.eot');
+    src: url('./../fonts/Archivo-Medium.eot?#iefix') format('embedded-opentype'),
+        url('./../fonts/Archivo-Medium.woff2') format('woff2'),
+        url('./../fonts/Archivo-Medium.woff') format('woff'),
+        url('./../fonts/Archivo-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Archivo';
+    src: url('./../fonts/Archivo-Bold.eot');
+    src: url('./../fonts/Archivo-Bold.eot?#iefix') format('embedded-opentype'),
+        url('./../fonts/Archivo-Bold.woff2') format('woff2'),
+        url('./../fonts/Archivo-Bold.woff') format('woff'),
+        url('./../fonts/Archivo-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    @apply font-body text-secondary;
+}
+
+h1,h2,h3,h4,h5 {
+    @apply font-heading font-bold text-secondary;
+}
