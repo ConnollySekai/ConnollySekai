@@ -7,6 +7,7 @@
         url('./../fonts/Archivo-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -18,6 +19,7 @@
         url('./../fonts/Archivo-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
+    font-display: swap;
 }
 
 body {
@@ -26,4 +28,5 @@ body {
 
 h1,h2,h3,h4,h5 {
     @apply font-heading font-bold text-secondary;
+    
 }

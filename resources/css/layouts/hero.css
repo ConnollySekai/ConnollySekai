@@ -2,6 +2,13 @@
     max-width: 380px;
 }
 
+.hero-image__group,
+.hero__tagline,
+.hero__subtitle,
+.hero__btn {
+    visibility: hidden;
+}
+
 @screen md {
     .hero__image {
         max-width: 480px;

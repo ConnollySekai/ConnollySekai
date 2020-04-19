@@ -1,5 +1,6 @@
 .feature {
-    max-width: 275px;
+    max-width: 200px;
+    visibility: hidden;
 }
 
 .feature__image {
@@ -8,6 +9,6 @@
 
 @screen md {
     .feature__image {
-        max-width: 85px;
+        max-width: 60px;
     }
 }

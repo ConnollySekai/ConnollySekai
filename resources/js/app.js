@@ -8,6 +8,16 @@ require('./bootstrap');
 
 window.Vue = require('vue');
 
+import VModal from 'vue-js-modal';
+
+import Form from 'form-backend-validation';
+
+import animation from './animations';
+
+import scrollObserver from './scrollObserver';
+
+Vue.use(VModal);
+
 /**
  * The following block of code may be used to automatically register your
  * Vue components. It will recursively scan this directory for the Vue
@@ -19,7 +29,6 @@ window.Vue = require('vue');
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
-Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -29,4 +38,26 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
 
 const app = new Vue({
     el: '#app',
+    data: {
+        form: new Form({
+            name:'',
+            email: '',
+            message: ''
+        })
+    },
+    methods: {
+        async handleSubmit() {
+            
+            const response = this.form.post('/inquiry');
+        },
+        showContactForm() {
+            this.$modal.show('contact-modal');
+        }
+    },
+    mounted() {
+
+        animation.hero();
+
+        scrollObserver.init(animation);
+    }
 });

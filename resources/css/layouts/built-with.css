@@ -3,9 +3,15 @@
 }
 
 .built-with__logos {
+    visibility: hidden;
     div {
         height: 51px;
     }
+}
+
+.built-with__group, 
+.built-with__heading {
+    visibility: hidden;
 }
 
 @screen md {

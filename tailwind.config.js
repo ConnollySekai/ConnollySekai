@@ -3,13 +3,16 @@ module.exports = {
         colors: {
             primary: '#F44A53',
             secondary: '#3A3853',
-            white: '#FFFFFF'
+            white: '#FFFFFF',
+            gray: '#F3F3F3',
+            error: '#ff6363',
         },
         fontFamily: {
             body: ['Roboto','sans-serif'],
             heading: ['Archivo', 'sans-serif']
         },
         fontSize: {
+            'sm': '0.875rem',
             'base': '1rem',
             'lg': '1.125rem', //18px
             'xl': '1.5rem', //24px
