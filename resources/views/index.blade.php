@@ -86,10 +86,14 @@
             <h3 class="projects__heading text-xl mb-8 md:text-3xl">{{ trans('translations.previous_projects') }}</h3>
             <div class="flex flex-col md:block">
                 <div class="projects__logo mx-auto md:inline-block">
+                    <a href="https://tevne.com/" target="_blank">
                         @include('svg.tevne-logo')
+                    </a>
                 </div>
                 <div class="projects__logo mx-auto md:inline-block">
+                    <a href="https://sekaipay.com/" target="_blank">
                         @include('svg.sekaipay-logo')
+                    </a>
                 </div>
             </div>
         </section>
@@ -97,7 +101,9 @@
             <p class="footer__email mx-auto font-bold text-lg">itadakiru@gmail.com</p>
         </footer>
         <modal name="contact-modal" :adaptive="true" :width="'90%'" :max-width="350" :height="'auto'">
+            <div class="mx-4 mt-4 p-4 bg-success text-white text-sm rounded" v-if="form_success"><p>Your inquiry has been sent. We will respond to you within 48hrs.</p></div>
             <form action="" class="px-4 py-8 mb-0" @submit.prevent="handleSubmit()">
+                @honeypot
                 <div class="input-group mb-4">
                     <label for="name">{{ trans('translations.name') }}</label>
                     <input type="text" id="name" class="input" v-model="form.name" :class="{'input--error': form.errors.has('name')}">

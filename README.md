@@ -24,3 +24,9 @@ Laravel Mix Command:
 ```
 npm run watch
 ```
+
+### Queue Worker
+Make sure to run queue worker to handle email submissions
+```
+php artisan queue:work --tries=3
+```

@@ -43,12 +43,30 @@ const app = new Vue({
             name:'',
             email: '',
             message: ''
-        })
+        }),
+        form_success: false
     },
     methods: {
         async handleSubmit() {
             
-            const response = this.form.post('/inquiry');
+            this.form.populate({
+                valid_from: document.getElementById('valid_from').value,
+                itadakiru_hp: document.getElementById('itadakiru_hp').value
+
+            });
+
+            try {
+                const response = await this.form.post('/inquiry');
+
+    
+                if (response.success === true) {
+                    this.form_success = true;
+                }
+            } catch (error) {
+
+                this.form_success = false;
+            } 
+            
         },
         showContactForm() {
             this.$modal.show('contact-modal');

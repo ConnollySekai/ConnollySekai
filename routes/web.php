@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
+use Spatie\Honeypot\ProtectAgainstSpam;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,4 +17,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'IndexController@index');
 
-Route::post('/inquiry', 'InquiryController@inquire');
+Route::post('/inquiry', 'InquiryController@inquire')->middleware(ProtectAgainstSpam::class);

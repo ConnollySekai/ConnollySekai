@@ -5,6 +5,7 @@ module.exports = {
             secondary: '#3A3853',
             white: '#FFFFFF',
             gray: '#F3F3F3',
+            success: '#8BC34A',
             error: '#ff6363',
         },
         fontFamily: {

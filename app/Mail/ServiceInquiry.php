@@ -7,18 +7,27 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 
-class ServiceInquiry extends Mailable
+class ServiceInquiry extends Mailable implements ShouldQueue
 {
     use Queueable, SerializesModels;
 
+    public $name;
+
+    public $email;
+
+    public $message;
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($name, $email, $message)
     {
-        //
+        $this->name = $name;
+
+        $this->email = $email;
+
+        $this->message = $message;
     }
 
     /**
@@ -28,6 +37,11 @@ class ServiceInquiry extends Mailable
      */
     public function build()
     {
-        return $this->view('view.name');
+        return $this->from('marctallo@gmail.com',$this->name)
+                ->subject('Inquiry')
+                ->view('mail')->with([
+                    'name' => $this->name,
+                    'inquiry_message' => $this->message
+                ]);
     }
 }
