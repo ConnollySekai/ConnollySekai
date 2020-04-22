@@ -7,8 +7,8 @@
     <meta name="theme-color" content="#ffffff">
 
     <!-- SEO -->
-    <meta name="Itadakiru" content="Bitcoin Payment Processor">
-    <meta name="Keywords" content="Bitcoin Crypto Website Payment Processor Hire Build">
+    <meta name="Description" content="Bitcoin Payment Processor">
+    <meta name="Keywords" content="Bitcoin, Crypto, Website, Payment Processor, Hire, Build">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="{{ URL::to('/') }}">
 
