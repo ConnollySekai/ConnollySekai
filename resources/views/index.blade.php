@@ -14,14 +14,13 @@
     
     
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-152610947-2">
-</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-164340609-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'UA-152610947-2');
+  gtag('config', 'UA-164340609-1');
 </script>
 
     <title>Itadakiru</title>
