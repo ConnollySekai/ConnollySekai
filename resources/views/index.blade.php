@@ -11,6 +11,18 @@
     <meta name="Keywords" content="Bitcoin, Crypto, Website, Payment Processor, Hire, Build">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="{{ URL::to('/') }}">
+    
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-152610947-2">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-152610947-2');
+</script>
 
     <title>Itadakiru</title>
 
