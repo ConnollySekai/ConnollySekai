@@ -37,7 +37,7 @@ class ServiceInquiry extends Mailable implements ShouldQueue
      */
     public function build()
     {
-        return $this->from('marctallo@gmail.com',$this->name)
+        return $this->from($this->email,$this->name)
                 ->subject('Inquiry')
                 ->view('mail')->with([
                     'name' => $this->name,
