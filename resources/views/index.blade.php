@@ -7,8 +7,8 @@
     <meta name="theme-color" content="#ffffff">
 
     <!-- SEO -->
-    <meta name="Description" content="Bitcoin Payment Processor">
-    <meta name="Keywords" content="Bitcoin, Crypto, Website, Payment Processor, Hire, Build">
+    <meta name="Description" content="Website Design & Bitcoin Payment Processor">
+    <meta name="Keywords" content="Bitcoin, Crypto, Website, Payment Processor, Website design, Hire Website, Build Website">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="{{ URL::to('/') }}">
     
@@ -23,7 +23,7 @@
   gtag('config', 'UA-164340609-1');
 </script>
 
-    <title>Itadakiru</title>
+    <title>ConnollySekai</title>
 
     <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('images/apple-touch-icon.png') }}">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('images/favicon-32x32.png') }}">
@@ -32,7 +32,7 @@
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
 </head>
 <body class="overflow-x-hidden">
-    <h1 class="hidden">Itadakiru</h1>
+    <h1 class="hidden">ConnollySekai</h1>
     <div id="app" class="container mx-auto">
         <header class='header py-8 px-4'>
             <div class="logo">
