@@ -97,6 +97,11 @@
             <h3 class="projects__heading text-xl mb-8 md:text-3xl">{{ trans('translations.previous_projects') }}</h3>
             <div class="flex flex-col md:block">
                 <div class="projects__logo mx-auto md:inline-block">
+                    <a href="https://sekaibit.com/" target="_blank">
+                        @include('svg.sekaibit-logo')
+                    </a>
+                </div>
+                <div class="projects__logo mx-auto md:inline-block">
                     <a href="https://tevne.com/" target="_blank">
                         @include('svg.tevne-logo')
                     </a>
