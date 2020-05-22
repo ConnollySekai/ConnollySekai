@@ -99,7 +99,7 @@
                 <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
                   <tr>
                     <td align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;">
-                      <div style="font-family:Archivo Black;font-size:20px;line-height:1;text-align:left;color:#F44A53;">ITADAKIRU</div>
+                      <div style="font-family:Archivo Black;font-size:20px;line-height:1;text-align:left;color:#F44A53;">CONNOLLYSEKAI</div>
                     </td>
                   </tr>
                   <tr>

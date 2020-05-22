@@ -23,6 +23,9 @@ module.exports = {
             '5xl': '4.75rem' //76px
         }
     },
+    variants: {
+        textSizes: ['responsive']
+    },
     corePlugins: {
         container: false
       },

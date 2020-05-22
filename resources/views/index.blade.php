@@ -115,7 +115,7 @@
             </div>
         </section>
         <footer class="footer flex p-4 md:pb-8">
-            <p class="footer__email mx-auto font-bold text-xl">s.c@connollysekai.com</p>
+            <p class="footer__email mx-auto font-bold text-lg md:text-xl">s.c@connollysekai.com</p>
         </footer>
         <modal name="contact-modal" :adaptive="true" :width="'90%'" :max-width="350" :height="'auto'">
             <div class="mx-4 mt-4 p-4 bg-success text-white text-sm rounded" v-if="form_success"><p>Your inquiry has been sent. We will respond to you within 48hrs.</p></div>
