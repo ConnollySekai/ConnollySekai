@@ -51,7 +51,7 @@ const app = new Vue({
             
             this.form.populate({
                 valid_from: document.getElementById('valid_from').value,
-                itadakiru_hp: document.getElementById('itadakiru_hp').value
+                connollysekai_hp: document.getElementById('connollysekai_hp').value
 
             });
 
